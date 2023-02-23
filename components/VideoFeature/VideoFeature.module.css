@@ -1,0 +1,156 @@
+.VideoFeatureContainer {
+    position: relative;
+}
+
+.VideoFeatureContainer > img {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 50px;
+    height: auto;
+    cursor: pointer;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 1.75rem;
+    margin: 0 0 20px 25px;
+}
+
+.VideoFeatureContainer > .Code {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.VideoFeature {
+    height: fit-content;
+    width: 100%;
+    padding: 50px 25px 25px;
+    border-radius: 0.5rem;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.VideoFeature > .TitleContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.VideoFeature > .TitleContainer > div {
+    position: relative;
+}
+
+.Custom {
+    font-size: 0.1rem;
+}
+
+.VideoFeature > .TitleContainer > div > img {
+    max-width: 50px;
+    height: auto;
+    filter: drop-shadow(2px 3px 2px rgba(0,0,0,0.3));
+    display: inline;
+    cursor: pointer;
+}
+
+.VideoFeature > .TitleContainer > div > div {
+    background-color: rgb(228, 194, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate3d(calc(-100% - 15px), -50%, 0);
+    padding: 10px;
+    transition: 200ms ease-in;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.VideoFeature > .TitleContainer > div:hover .ToolTip {
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+}
+
+.VideoFeature > .TitleContainer > h1 {
+    color: rgb(229, 229, 229);
+    font-family: 'Poppins';
+    font-size: 2rem;
+    display: inline;
+}
+
+.VideoFeature > p {
+    margin: 25px 0;
+    padding: 0 10px;
+    color: rgb(231, 207, 207);
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.VideoFeature > a {
+    border-radius: 0.5rem;
+    background-color: rgb(22 163 74);
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    align-self: center;
+}
+
+.VideoFeature > a > img {
+    max-width: 25px;
+    height: auto;
+}
+
+.VideoFeature > .Tags {
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: flex-start;
+    margin: 25px 0 calc(50px + 20px);
+}
+
+.VideoFeature > .Tags > div {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.VideoFeature > .Tags > div > p {
+    color: rgb(187, 187, 187);
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    background-color: #1e1e1e;
+    margin: 0 10px 10px 0;
+    padding: 15px;
+    width: fit-content;
+    height: min-content;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: 1000ms ease-in;
+}
+
+.VideoFeature > .Tags > div > p:first-child {
+    margin-left: 100px;
+} 
+
+
+.VideoFeature > .Tags > span {
+    color: rgb(231, 207, 207);
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 7.5px 0 0 7.5px;
+    position: absolute;
+}
+

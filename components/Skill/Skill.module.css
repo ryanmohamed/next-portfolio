@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+.Skill {
+    box-shadow: rgba(103, 103, 103, 0.25) 0px 10px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: #1e1e1e;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 1000px;
+    height: min-content;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 20px calc(20px + 5rem) 20px;
+    transition: 200ms;
+}
+
+.Skill > h1{
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(top right,  rgb(74, 65, 255), rgb(211, 26, 155));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;	
+    text-shadow: 3px 5px 3px rgba(0,0,0,0.3);
+}
+
+.Skill > .Caret {
+    cursor: pointer;
+    max-width: 5rem;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.Skill > .Tech {
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.Skill > .Tech > p {
+    color: #7e7e7e;
+    background-color: #080808;
+    padding: 5px 15px;
+    border-radius: 0.25em;
+    height: fit-content;
+}
+.Skill > .Tech > div >  span {
+    text-decoration: none;
+    color: #bbbbbb;
+    background-color: #1e1e1e;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+.Skill > .Tech > div > span:nth-child(1) {
+    margin-left: 10px;
+}
+
+.Skill > video {
+    margin: 50px 0;
+    border-radius: 0.5rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .Skill > h1{
+        font-size: 2rem;
+    }
+    .Skill > .Caret {
+        max-width: 4rem;
+        bottom: 10px;
+        right: 10px;
+    }
+    .Skill > .Tech {
+        font-size: 1.5rem;
+    }
+    .Skill > .Tech > div > span {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Skill > h1{
+        font-size: 2.25rem;
+    }
+    .Skill > .Caret {
+        max-width: 3rem;
+        bottom: 10px;
+        right: 10px;
+    }
+    .Skill > .Tech {
+        font-size: 1.25rem;
+        flex-direction: column;
+    }
+    .Skill > .Tech > div > span {
+        font-size: 1rem;
+    }
+}

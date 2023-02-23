@@ -1,0 +1,73 @@
+      {/* <div>
+        <h1>Skills and Projects</h1>
+        <p>Use these to quickly navigate to a certain language</p>
+        <p><i>Try expanding my language cards for some extras</i></p>
+      </div>
+      
+      <blockquote>
+        <p>Hello and Welcome</p>
+        <p>How are you doing.</p>
+      </blockquote>
+      
+      <Skill {...js} show={
+        <VideoFeature title="Petmatcher" 
+            src="/vids/Petmatcher_Demo.mp4"
+            href="https://petmatcher.netlify.app" 
+            github="https://github.com/ryanmohamed/pandagum-client"
+            notable={true}
+            tags={['fullstack', 'front-end', 'back-end', 'node.js', 'react.js', 'mysql', 'jwt authentication', 'restful api']}
+            filename={'auth.js'}
+            codeSnippet={`${petmatcer_doc}`}
+            language={'js'}
+        >
+            <p>Petmatcher is a <span className='emphasize'>scalable</span> and <span className='emphasize'>authenticated</span> full-stack web app, aimed towards family, friends, or couples looking to find their ideal pet in a pleasant interactive pair up. </p>
+            <p>Petmatcher was created using <span className='emphasize'>Node.js</span>, <span className='emphasize'>React</span> and <span className='emphasize'>SQL</span>. It implements a pair-up system of rooms, where users synchronously answer prompts, providing keywords for image generation. </p>
+        </VideoFeature>
+      }
+      >
+
+        <VideoFeature title="Petmatcher" 
+            src="/vids/Petmatcher_Demo.mp4"
+            href="https://petmatcher.netlify.app" 
+            github="https://github.com/ryanmohamed/pandagum-client"
+            notable={true}
+            tags={['fullstack', 'front-end', 'back-end', 'node.js', 'react.js', 'mysql', 'jwt authentication', 'restful api']}
+            noVideo={true}
+        >
+            <p>Petmatcher is a <span className='emphasize'>scalable</span> and <span className='emphasize'>authenticated</span> full-stack web app, aimed towards family, friends, or couples looking to find their ideal pet in a pleasant interactive pair up. </p>
+            <p>Petmatcher was created using <span className='emphasize'>Node.js</span>, <span className='emphasize'>React</span> and <span className='emphasize'>SQL</span>. It implements a pair-up system of rooms, where users synchronously answer prompts, providing keywords for image generation. </p>
+        </VideoFeature>
+
+        <p> extras </p>
+
+      </Skill>
+
+
+      
+      <Skill {...python} show={
+        <VideoFeature title="Automatic Brain Segmentation on Multi-Modal Volumes"  
+            github="https://github.com/ryanmohamed/biomed-final-project-3d-unet"
+            notable={true}
+            tags={['ai', 'neural networks', 'convolutional neural network', 'fully convolutional regression networks', 'u-net', 'tensorflow', 'numpy', 'matplotlib']}
+            filename={'my_model.py'}
+            codeSnippet={`${unet_doc}`}
+            language={'python'}
+            noVideo
+        >
+            <p>A <span className="emphasize">3D U-Net Architecture</span> was employed for lambda lambda lambda. </p>
+        </VideoFeature>
+      }>
+        <p> extras </p>
+      </Skill>
+      <blockquote>
+        <p>Hello and Welcome</p>
+        <p>How are you doing.</p>
+      </blockquote>
+
+      <Skill {...sql} >
+        <p> extras </p>
+      </Skill>
+
+      <Skill {...js} style={{ marginBottom: '0' }} >
+        <p> extras </p>
+      </Skill> */}

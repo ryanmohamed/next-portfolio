@@ -1,0 +1,16 @@
+.SkillLayout {
+    height: max-content;
+    min-height: calc(100vh - calc(var(--bannerheight) + var(--navheight)));
+    width: 100vw;
+    background-color: var(--main-bg2);
+    /* overflow-x: hidden; */
+    padding-left: min(300px, 30vw);
+    position: relative;
+}
+
+@media screen and (max-width: 800px){
+    .SkillLayout {
+        /* remove padding when side panel goes away on mobile */
+        padding-left: 0;
+    }
+}

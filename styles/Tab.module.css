@@ -1,0 +1,26 @@
+.Tab {
+    width: 100px;
+    height: 100px;
+    
+    margin: 0 15px 0 0;
+    cursor: pointer;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.Paper {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 100px;
+    opacity: 0.1;
+}

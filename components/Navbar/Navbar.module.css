@@ -1,0 +1,42 @@
+.Navbar {
+    padding: 0 25px;
+    height: var(--navheight);
+    width: 100%;
+    background-color: var(--main-bg5);
+    color: var(--main-txt);
+    font-family: 'Cabin';
+    font-size: 120%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 12;
+    position: fixed;
+    top: var(--bannerheight);
+    left: 0;
+}
+
+.Navbar > * {
+    display: inline;
+}
+
+.Navbar > .Links {
+    list-style-type: none;
+}
+
+.Navbar > .Links > .Link {
+    display: inline;
+    margin: 0 30px;
+    transition: 200ms;
+}
+
+.Link:hover > a {
+    color: var(--alternate-bg4);
+}
+
+.Link > a {
+    text-decoration: none;
+    color: white;
+    transition: inherit;
+}

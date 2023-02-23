@@ -1,0 +1,22 @@
+.TabContainer {
+    height: 100%;
+    width: 100vw;
+    /* background-color: #0000ff23; */
+
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    margin-top: 50px;
+}
+
+.TabContainer > *:nth-child(1){
+    background-color: red;
+}
+
+.Panel {
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 10px;
+    position: absolute;
+}
