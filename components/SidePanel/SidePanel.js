@@ -21,7 +21,7 @@ export default function SidePanel ({ children }) {
 
     return (
         <>
-        <div ref={ref} className={styles.SidePanel} style={{ top: toggle ? isMobile ? '0' : 'var(--navheight)' : '-200%'}}>
+        <div ref={ref} className={styles.SidePanel} style={{ top: toggle ? isMobile ? '0' : 'var(--navheight)' : '-200%', bottom: isMobile ? undefined : '45px' }}>
             {children}
         </div>
         <div className={styles.Burger} 

@@ -1,10 +1,9 @@
 .VideoFeatureContainer {
     position: relative;
-    z-index: 2;
 }
 
 .VideoFeatureContainer > img {
-    z-index: 6;
+    z-index: 10;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -22,11 +21,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 5;
 }
 
 .VideoFeature {
-    z-index: 5;
     height: fit-content;
     width: 100%;
     padding: 50px 25px 25px;
