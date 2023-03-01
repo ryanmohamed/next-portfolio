@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import styles from './VideoLink.module.css'
 import useMeasure from 'react-use-measure'
 import { LazyLoadComponent } from 'react-lazy-load-image-component'
+import Image from "next/image"
 
 export const VideoLink = ({ style, title, src, href,...props }) => {
     const [over, setOver] = useState(false)
@@ -24,9 +25,10 @@ export const VideoLink = ({ style, title, src, href,...props }) => {
                 className={styles.Cover}
                 href={href}
                 target="_blank"
+                rel="noreferrer"
             >
                 Take me to {title}
-                <img src="/svgs/external-link.svg" />
+                <Image src="/svgs/external-link.svg" alt="project link" width={50} height={50}/>
             </a>
         </div>
     )

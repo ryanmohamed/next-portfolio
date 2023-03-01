@@ -3,6 +3,7 @@ import { VideoLink } from "../VideoLink/VideoLink"
 import { AnimatePresence, motion } from 'framer-motion'
 import styles from './VideoFeature.module.css'
 import useMeasure from 'react-use-measure'
+import Image from 'next/image'
 
 import CodeSnippet from '../CodeSnippet/CodeSnippet'
 
@@ -30,7 +31,12 @@ export const VideoFeature = (props) => {
             className={styles.VideoFeatureContainer}
         >
             
-        { codeSnippet && <motion.img src={`/svgs/${code !== 'open' ? 'code' : 'back' }.svg`} onClick={() => flipCode()} whileTap={{ scale: 1.2 }}/>}
+        { codeSnippet && <Image src={`/svgs/${code !== 'open' ? 'code' : 'back' }.svg`} 
+            alt="expand"
+            width={50}
+            height={50}
+            onClick={() => flipCode()} 
+        />}
 
         <AnimatePresence mode='wait'>
             { codeSnippet && <CodeSnippet 
@@ -53,7 +59,7 @@ export const VideoFeature = (props) => {
                 <div className={styles.TitleContainer}>
                     <h1>{title}</h1>
                     {notable && <div>
-                        <img src="/svgs/notable.svg" />
+                        <Image src="/svgs/notable.svg" alt="notable project" width={50} height={50}/>
                         <div className={styles.ToolTip}>Completed & notable project</div>
                     </div>}
                 </div>
@@ -69,7 +75,7 @@ export const VideoFeature = (props) => {
                     href={github} 
                     target="_blank"
                 >
-                    <img src="/svgs/github.svg"/>
+                    <Image src="/svgs/github.svg" alt="github button" width={50} height={50}/>
                 </motion.a>
 
                 {tags && <div className={styles.Tags}>

@@ -52,7 +52,7 @@ export default function Projects({ Component, pageProps }) {
 
         <main>
           <ul>
-            <h3><span>Languages</span> I'm proficient with are:</h3>
+            <h3><span>Languages</span> I&apos;m proficient with are:</h3>
             <div>
               <li>Javascript</li>
               <li>SQL / T-SQL</li>
@@ -63,7 +63,7 @@ export default function Projects({ Component, pageProps }) {
           </ul>
 
           <ul>
-            <h3><span>Technologies</span> I'm familar with are:</h3>
+            <h3><span>Technologies</span> I&apos;m familar with are:</h3>
             <div>
               <li>React</li>
               <li>Node</li>
