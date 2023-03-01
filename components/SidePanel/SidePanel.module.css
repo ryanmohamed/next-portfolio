@@ -7,10 +7,24 @@
     z-index: 10;
     position: fixed;
     top: var(--navheight);
+    bottom: 45px; /* not sure why this works, via stack overflow */
     left: 0;
 
     padding: 45px 0;
     transition: 200ms;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.SidePanel::-webkit-scrollbar {
+    width: 0;
+}
+.SidePanel::-webkit-scrollbar-track {
+    box-shadow: none;
+}
+.SidePanel::-webkit-scrollbar-thumb {
+    background-color: none;
+    outline: none;
 }
 
 .Burger {

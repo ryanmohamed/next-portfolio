@@ -6,7 +6,7 @@ export default function Navbar(){
         Ryan Mohamed
         <ul className={styles.Links}>
             <li className={styles.Link}><Link href={{ pathname: '/' }}>Home</Link></li>
-            <li className={styles.Link}><Link href={{ pathname: '/projects' }} prefetch={true} >Projects</Link></li>
+            <li className={styles.Link}><Link href={{ pathname: '/projects' }}>Projects</Link></li>
         </ul>
     </nav>
 }
