@@ -2,9 +2,11 @@
     height: fit-content;
     width: 100%;
     box-sizing: border-box;
+    background-color: var(--main-bg);
 }
 
 .Projects_Container {
+    position: relative;
     min-height: calc(100vh - calc(var(--bannerheight) + var(--navheight) + var(--dropdownheight)));
     width: 100%;
 }
@@ -17,12 +19,22 @@
 
 /* page title */
 .Projects_Container > h1 {
-    color: white;
-    height: 20vh;
+    color: var(--main-txt);
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0 2px 10px rgba(195, 195, 195, 0.464);
+    padding: 100px 50px 30px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: block;
+}
+
+.Projects_Container > h1 > p {
+    display: block;
+    text-shadow: none;
 }
 
 
@@ -30,69 +42,173 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 50px;
-    padding: 0 15px;
+    min-height: 100px;
+    padding: 25px;
 }
-
 .Shortcuts > li {
-    margin: 0 5px;
-    font-size: 175%;
+    margin: 15px 10px;
+    font-size: 16px;
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7.5px 15px;
+    border-radius: 1.5rem;
     cursor: pointer;
-    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.46);
+    background-color: var(--main-bg4);
+}
+.Shortcuts > li > a {
+    text-decoration: none;
+    color: var(--main-txt);
+    font-family: 'Lato';
 }
 
-/* breakdown */
+
+/* BREAKDOWN INFORMATION */
 .Breakdown {
-    background-color: red;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    margin-bottom: 50px;
+    width: 100%;
+    margin: 50px 0 0;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+.Breakdown section {
+    /* background-color: var(--main-bg4); */
+    /* padding: 40px;
+    border-radius: 0 1.25rem 1.25rem 0; */
+    display: flex;
+    flex-direction: column;
+    transition: 200ms;
+    padding: 20px;
+    max-width: 100%;
+    width: auto;
+    margin: 0;
 }
 
-.Breakdown > section {
-    background-color: green;
-    padding: 40px;
-    border-radius: 0 1.25rem 1.25rem 0;
+.Breakdown section > h2 {
+    color: var(--main-txt);
+    font-family: 'Lato';
+    font-size: 24px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.427);
+    margin-bottom: 10px;
 }
 
-.Breakdown > section > h2 {
-    color: white;
+.Breakdown section ul {
+    list-style-type: none;
+    padding: 25px 25px 10px;
+    width: 100%;
 }
 
-.Breakdown > section > ul {
-    list-style-position: inside;
+.Breakdown section ul > li {
+    color: var(--main-txt);
+    font-size: 18px;
+    font-family: 'Inter';
+    margin-bottom: 20px;
 }
+
+.Breakdown section ul > li > span { 
+    font-family: 'Lato';
+    font-size: 20px;
+    color: var(--alternate-txt);
+    font-style: italic;
+}
+
+.Breakdown section > img {
+    text-align: center;
+    align-self: flex-start;
+    width: 50px;
+    padding: 5px;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
 
 
 
 /* INDIVIDUAL INFORMATION PANELS  */
 .Breakdown > .Techs {
-    background-color: blue;
     grid-column: 1/8;
 }
 
 .Breakdown > .Courses {
-    background-color: green;
-    border-radius: 1.25rem 0 0 1.25rem;
-    grid-column: 3/11;
-    margin: 50px 0;
+    width: 100%;
+    /* align-self: flex-end; */
+    justify-content: center;
+    padding: 40px 20px 20px;
+    margin-top: 20px;
+    border-top: 1px solid white;
 }
 .Breakdown > .Courses > h2 {
-    text-align: right;
+    /* text-align: right; */
 }
-.Breakdown > .Courses > ul {
-    direction: rtl;
+.Breakdown > .Courses ul {
+    /* direction: rtl; */
+    padding: 20px 25px 0; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Breakdown > .Courses ul > li {
+    /* background-color: blue; */
+    margin: 25px 0;
+}
+.Breakdown > .Courses ul > li > i {
+    /* background-color: blue; */
+    margin-right: 5px;
+    color: var(--alternate-txt);
+    font-size: 20px;
+    font-family: 'Lato';
+}
+.Breakdown > .Courses ul > li > div {
+    /* background-color: blue; */
+    margin: 20px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Breakdown > .Courses ul > li > div > p {
+    /* background-color: blue; */
+    margin: 0 0 10px 10px;
+    background-color: var(--main-bg2);
+    padding: 8px;
+    border-radius: 0.25rem;
+}
+.Breakdown > .Courses > p {
+    /* align-self: flex-end; */
 }
 
 .Breakdown > .Methods {
-    background-color: orangered;
     grid-column: 1/8;
 }
 
 
+
+
 .Projects {
-    background-color: aqua;
-    padding: 100px 50px 50px;
+    padding: 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.Projects > section {
+    margin-bottom: 10vh;
+    padding-bottom: 10vh;
+    border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 800px) {
+    /* .Breakdown > .Techs {
+        grid-column: 1/9;
+    }
+    .Breakdown > .Courses {
+        grid-column: 2/11;
+    }
+    .Breakdown > .Methods {
+        grid-column: 1/9;
+    } */
 }

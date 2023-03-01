@@ -22,7 +22,7 @@ const ignoreCircularReferences = () => {
       }
       return value;
     };
-  };
+};
 
 // idea courtesy of sam selikoff - https://github.com/samselikoff/2022-06-09-resizable-panel/commit/fe04a842367657b4acb1058c454d3eca739c419d
 function ResizeablePanel({ children }){

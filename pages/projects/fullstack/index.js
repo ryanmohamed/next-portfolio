@@ -1,6 +1,11 @@
 import styles from './fullstack.module.css'
 import SkillLayout from "../../../layout/SkillLayout/SkillLayout"
 import Petmatcher from '../../../components/Projects/Petmatcher/Petmatcher'
+import { motion } from 'framer-motion'
+import CollapsibleSection from '../../../components/CollapsibleSection/CollapsibleSection'
+import GoogleBlogger from '../../../components/Projects/GoogleBlogger/GoogleBlogger'
+import NextBlog from '../../../components/Projects/NextBlog/NextBlog'
+
 
 function Fullstack(){
 
@@ -9,60 +14,64 @@ function Fullstack(){
         <div className={styles.ProjectsPage} style={{ 'position': 'relative' }}>
 
             <div className={styles.Projects_Container}>
-                <h1> Full-stack Development </h1>
-
+                <h1> Full-stack Development</h1>
                 <ul className={styles.Shortcuts}>
-                    <li><a href="#petmatcher">project 1</a></li>
-                    <li><a>project 2</a></li>
-                    <li><a>project 3</a></li>
+                    {/* <div className={styles.Wave}>
+                        <img className={styles.top} src="/svgs/waves-top.svg"/>
+                        <img className={styles.bot} src="/svgs/waves-bot.svg"/>
+                    </div> */}
+                    <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#petmatcher">Petmatcher</a></motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a>Student++</a></motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#googleblogger">Google/Blogger API + OAuth 2.0</a></motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#nextblog">Next.js / Firebase Blog</a></motion.li>
                 </ul>
 
                 <section className={styles.Breakdown}>
-                    <section className={styles.Techs}>
-                        <h2>Technologies Used: </h2>
-                        <ul>
-                            <li> Node.js for building RESTful APIs, secured endpoints, and interacting with deployed databases. </li>
-                            <li> React.js for building dynamic, responsive, progressive web apps (PWAs) for intuitive client interaction.</li>
-                            <li> Next.js for SSR, SEO and multi-page app support. </li>
-                            <li> You need more here like docker utilization </li>
-                            <li> Tailwind for styling components quickly in Javascript</li>
-                            <li> Github and Jira for collabration and working in Teams. </li>
-                        </ul>
-                    </section> 
+                    <CollapsibleSection heading="Technologies Used:" className={styles.Techs}>
+                        <li> <span>Node.js</span> for building <span>RESTful APIs</span>, <span>secured endpoints</span>, and interacting with deployed <span>databases</span>. </li>
+                        <li> <span>React.js</span> for building <span>dynamic</span>, <span>responsive</span>, client side designs, for intuitive client interaction.</li>
+                        <li> <span>Next.js</span> for <span>SSR</span>, <span>SEO</span> and <span>multi-page app</span> support. </li>
+                        <li> You need more here like docker utilization. </li>
+                        <li> <span>Tailwind</span> for quickly implementing beautiful <span>CSS</span>.</li>
+                        <li> <span>Github</span> and <span>Jira</span> for collabration and working in <span>Teams</span>. </li>
+                    </CollapsibleSection>
 
-                    <section className={styles.Courses}>
-                        <h2>Some courses I've taken with relevance to this skill are: </h2>
-                        <ul>
-                            <li>Internet Web & Technologies with Raymond Law
-                                <ul><li>Quick Link to Projects</li></ul>
-                            </li>
+                    <CollapsibleSection heading="Courses taken relevant to this skill: " className={styles.Courses}>
+                        <li>
+                            <i>Internet Web & Technologies</i> w/ Raymond Law
+                            <div> 
+                                <p>Back-end Development</p>
+                                <p>Node.js</p>
+                                <p>TCP/UDP</p>
+                                <p>HTTP/HTTPS</p>
+                                <p>REST APIs</p>
+                                <p>OAuth 2.0</p>
+                            </div>   
+                        </li>
 
-                            <li>Data Communications with Mahabur Rahman
-                                <ul><li>Quick Link to Projects</li></ul>
-                            </li>
-                        </ul>
-                    </section>
+                        <li>
+                            <i>Data Communications</i> w/ Mahabur Rahman
+                            <div> 
+                                <p>CI/CD</p>
+                                <p>Front-end Development</p>
+                                <p>Back-end Development</p>
+                                <p>React.js</p>
+                                <p>Node.js</p>
+                                <p>TCP/UDP</p>
+                                <p>HTTP/HTTPS</p>
+                                <p>REST APIs</p>
+                                <p>Socket Programming</p>
+                                <p>JWT Authentication</p>
+                            </div>  
+                        </li>
+                    </CollapsibleSection>
 
-                    <section className={styles.Methods}>
-                        <h2>Methodologies Used: </h2>
-                        <ul>
-                            <li>Agile Development</li>
-                            <li>Front-end Development</li>
-                            <li>Back-end Development</li>
-                            <li>REST APIs</li>
-                            <li>OAuth 2.0</li>
-                            <li>JWT Authetication</li>
-                            <li>PWAs</li>
-                            <li>TCP / UDP</li>
-                            <li>Socket Programming</li>
-                            <li>Database Drivers</li>
-                            <li>UI/UX Design</li>
-                        </ul>
-                    </section>
                 </section>
 
                 <div className={styles.Projects}>
                     <section id="petmatcher"><Petmatcher /></section>
+                    <section id="googleblogger"><GoogleBlogger /></section>
+                    <section id="nextblog"><NextBlog /></section>
                 </div>
 
 

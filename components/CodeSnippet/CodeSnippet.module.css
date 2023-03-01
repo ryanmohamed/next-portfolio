@@ -6,7 +6,7 @@
 
     padding: 25px 20px calc(50px + 20px + 25px);
     border-radius: 0.5rem;
-    background-color: #191919;
+    background-color: var(--main-bg4);
     overflow-y: scroll;
 }
 

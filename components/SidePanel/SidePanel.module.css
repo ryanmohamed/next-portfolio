@@ -10,7 +10,7 @@
     left: 0;
 
     padding: 45px 0;
-    transition: 300ms;
+    transition: 200ms;
 }
 
 .Burger {
@@ -23,7 +23,7 @@
 
     background: linear-gradient(90deg, var(--alternate-bg4), var(--alternate-bg2));
     z-index: 10;
-    transition: 300ms;
+    transition: 200ms;
     cursor: pointer;
     filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.4));
 }

@@ -28,7 +28,7 @@
     width: 100%;
     padding: 50px 25px 25px;
     border-radius: 0.5rem;
-    background-color: #191919;
+    background-color: var(--main-bg4);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -99,6 +99,7 @@
     background-color: rgb(22 163 74);
     padding: 10px;
     width: 90%;
+    height: 50px;
     display: flex;
     justify-content: center;
     margin: 30px 0;
@@ -130,14 +131,14 @@
     color: rgb(187, 187, 187);
     font-size: 1.2rem;
     line-height: 1.2rem;
-    background-color: #1e1e1e;
+    background-color: var(--main-bg3);
     margin: 0 10px 10px 0;
     padding: 15px;
     width: fit-content;
     height: min-content;
     border-radius: 1.5rem;
     cursor: pointer;
-    transition: 1000ms ease-in;
+    transition: 200ms ease-in;
 }
 
 .VideoFeature > .Tags > div > p:first-child {

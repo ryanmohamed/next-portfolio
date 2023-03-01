@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { VideoFeature } from '../../VideoFeature/VideoFeature'
 
-function Petmatcher(){
+function NextBlog(){
 
     // fetch the contents of each of the public files
     const [petmatcher_doc, set_petmatcher_doc] = useState(undefined)
@@ -13,7 +13,7 @@ function Petmatcher(){
     }, [])
 
     return (
-        <VideoFeature title="Petmatcher" 
+        <VideoFeature title="Blog with Next.js & Firebase" 
             src="/vids/Petmatcher_Demo.mp4"
             href="https://petmatcher.netlify.app" 
             github="https://github.com/ryanmohamed/pandagum-client"
@@ -31,4 +31,4 @@ function Petmatcher(){
 
 }
 
-export default Petmatcher
+export default NextBlog

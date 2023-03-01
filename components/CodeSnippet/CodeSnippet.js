@@ -5,7 +5,7 @@ import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript'
 import sql from 'react-syntax-highlighter/dist/cjs/languages/prism/sql'
 import python from 'react-syntax-highlighter/dist/cjs/languages/prism/python'
 
-import dark from 'react-syntax-highlighter/dist/cjs/styles/prism/gruvbox-dark'
+import dark from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark'
 
 SyntaxHighlighter.registerLanguage('js', js)
 SyntaxHighlighter.registerLanguage('sql', sql)
