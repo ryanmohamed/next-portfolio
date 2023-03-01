@@ -13,22 +13,16 @@ export default function Home() {
     <div className={styles.Home}>
 
       <main>
-        <motion.div
-          className={styles.Name}
-          initial={{
-            opacity: 0,
-            scale: 0.9
-          }}
-          whileInView={{
-            opacity: 1,
-            scale: 1.3
-          }}
-        >
-          <p>RYAN</p>
-          <p>MOHAMED</p>
-        </motion.div>
+        
+        <h1>Hello there! ✌️</h1>
+        <h3>While this site in under construction... 🚧</h3>
+        <h3>Please take the time to look around!</h3>
 
-        <input type="search" />
+        <blockquote>
+          <p>This portfolio is <i>currently</i> primarily made using <motion.span>Next</motion.span>, <motion.span>React</motion.span>, <motion.span>CSS</motion.span>.</p>
+
+          <p>With <motion.span>Framer Motion</motion.span> for animation.</p>
+        </blockquote>
 
       </main>
 
