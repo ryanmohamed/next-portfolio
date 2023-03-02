@@ -15,7 +15,7 @@ export default function FScreenModal({ src, toggle, setToggle, children }) {
       animate={{ scale: 1, opacity: 1 }}
       exit={{ scale: 0, opacity: 0 }}
     >
-      <Image src={close} onClick={() => setToggle(false)} />
+      <Image src={close} alt="close icon" onClick={() => setToggle(false)} />
       <div>
         <ScrollContainer>
           { children }

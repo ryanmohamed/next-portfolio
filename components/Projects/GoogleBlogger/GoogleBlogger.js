@@ -32,7 +32,7 @@ function GoogleBlogger(){
                 codeSnippet={`${petmatcher_doc}`}
                 language={'js'}
             >
-                <p>This is a project for <span className="emphasize">Internet Web & Technologies</span> that allows a user to <span className="emphasize">search</span> for their favorite song and <span className="emphasize">seamlessly make a post</span> to their Blogger with it's lyrics. </p>
+                <p>This is a project for <span className="emphasize">Internet Web & Technologies</span> that allows a user to <span className="emphasize">search</span> for their favorite song and <span className="emphasize">seamlessly make a post</span> to their Blogger with it&apos;s lyrics. </p>
                 <p>This project implements <span className='emphasize'>OAuth 2.0</span> methodology for <span className="emphasize">interaction between multiple REST APIs</span>. After retrieving the users desired lyrics, permission to post to Blogger via Google is granted through OAuth 2.0.</p>
                 <span onClick={() => { setToggle(!toggle) }} className={styles.OpenModal}> 
                     Click here to view sequence diagram 
