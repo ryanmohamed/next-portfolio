@@ -3,7 +3,6 @@
 }
 
 .VideoFeatureContainer > img {
-    z-index: 10;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -14,6 +13,7 @@
     padding: 10px;
     border-radius: 1.75rem;
     margin: 0 0 20px 25px;
+    z-index: 10;
 }
 
 .VideoFeatureContainer > .Code {
@@ -93,6 +93,7 @@
     font-size: 1.2rem;
     line-height: 2rem;
 }
+
 
 .VideoFeature > a {
     border-radius: 0.5rem;

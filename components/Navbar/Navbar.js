@@ -18,7 +18,7 @@ export default function Navbar(){
                 <Link href={{ pathname: '/projects' }}>
                     Projects
                 </Link>
-                { isHome && <Image src="/svgs/click.svg" alt="click above" height={100} width={100} /> }
+                { isHome && <Image src="/svgs/click.svg" alt="click above" height={50} width={50} /> }
             </li>
 
         </ul>

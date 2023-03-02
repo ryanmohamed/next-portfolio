@@ -1,0 +1,18 @@
+.OpenModal {
+    color: var(--main-txt2);
+    font-style: italic;
+    font-family: 'Poppins';
+    font-size: 15px;
+    text-align: center;
+    padding: 0 10px;
+    width: fit-content;
+    transition: 200ms;
+    user-select: none;
+    margin: 0;
+    align-self: center;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.OpenModal:hover {
+    scale: 1.1;
+}

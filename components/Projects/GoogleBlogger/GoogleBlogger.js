@@ -1,5 +1,10 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, React } from 'react'
+import FScreenModal from '../../FScreenModal/FScreenModal'
 import { VideoFeature } from '../../VideoFeature/VideoFeature'
+import styles from './GoogleBlogger.module.css'
+import Image from 'next/image'
+import sequenceDiagram from '../../../public/projects/fullstack/blogger/sequencediagram.png'
+import Spinner from '../../Spinner/Spinner'
 
 function GoogleBlogger(){
 
@@ -12,19 +17,36 @@ function GoogleBlogger(){
         console.log(petmatcher_doc)
     }, [])
 
+    // full screen modal state
+    const [ toggle, setToggle ] = useState(false)
+
     return (
-        <VideoFeature title="OAuth 2.0 w/ Google and Blogger" 
-            src="/vids/Petmatcher_Demo.mp4"
-            href="https://petmatcher.netlify.app" 
-            github="https://github.com/ryanmohamed/pandagum-client"
-            tags={['fullstack', 'front-end', 'back-end', 'node.js', 'react.js', 'mysql', 'jwt authentication', 'restful api']}
-            filename={'auth.js'}
-            codeSnippet={`${petmatcher_doc}`}
-            language={'js'}
-        >
-            <p>This project implements <span className='emphasize'>OAuth 2.0</span> methodology through multi-API interaction  and <span className='emphasize'>authenticated</span> full-stack web app, aimed towards family, friends, or couples looking to find their ideal pet in a pleasant interactive pair up. </p>
-            <p>Petmatcher was created using <span className='emphasize'>Node.js</span>, <span className='emphasize'>React</span> and <span className='emphasize'>SQL</span>. It implements a pair-up system of rooms, where users synchronously answer prompts, providing keywords for image generation. </p>
-        </VideoFeature>
+        <>
+            <VideoFeature title="Posting song lyrics with OAuth 2.0" 
+                src="/vids/Petmatcher_Demo.mp4"
+                href="https://petmatcher.netlify.app" 
+                github="https://github.com/ryanmohamed/pandagum-client"
+                noVideo
+                tags={['back-end', 'node.js', 'html 5', 'css', 'oauth 2.0', 'rest api', 'http / https', 'tcp / ip']}
+                filename={'auth.js'}
+                codeSnippet={`${petmatcher_doc}`}
+                language={'js'}
+            >
+                <p>This is a project for <span className="emphasize">Internet Web & Technologies</span> that allows a user to <span className="emphasize">search</span> for their favorite song and <span className="emphasize">seamlessly make a post</span> to their Blogger with it's lyrics. </p>
+                <p>This project implements <span className='emphasize'>OAuth 2.0</span> methodology for <span className="emphasize">interaction between multiple REST APIs</span>. After retrieving the users desired lyrics, permission to post to Blogger via Google is granted through OAuth 2.0.</p>
+                <span onClick={() => { setToggle(!toggle) }} className={styles.OpenModal}> 
+                    Click here to view sequence diagram 
+                </span>
+            </VideoFeature>
+
+            <FScreenModal 
+                src="/projects/fullstack/blogger/sequencediagram.png" 
+                toggle={toggle}
+                setToggle={setToggle}
+            >
+                <Image src={sequenceDiagram} alt="sequence diagram" placeholder={<Spinner />}/>
+            </FScreenModal>
+        </>
     )
 
 }
