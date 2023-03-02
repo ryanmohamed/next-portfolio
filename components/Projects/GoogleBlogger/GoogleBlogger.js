@@ -44,7 +44,7 @@ function GoogleBlogger(){
                 toggle={toggle}
                 setToggle={setToggle}
             >
-                <Image src={sequenceDiagram} alt="sequence diagram" placeholder={<Spinner />}/>
+                <Image src={sequenceDiagram} alt="sequence diagram" placeholder="blur"/>
             </FScreenModal>
         </>
     )
