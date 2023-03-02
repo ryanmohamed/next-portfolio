@@ -9,12 +9,12 @@ import Spinner from '../../Spinner/Spinner'
 function GoogleBlogger(){
 
     // fetch the contents of each of the public files
-    const [petmatcher_doc, set_petmatcher_doc] = useState(undefined)
+    const [blogger_doc, set_blogger_doc] = useState(undefined)
 
     // go fetch the files and load them in
     useEffect(() => {
-        fetch('/snippets/petmatcher_auth_js.txt').then(r => r.text()).then(text => set_petmatcher_doc(text))
-        console.log(petmatcher_doc)
+        fetch('/snippets/blogger.txt').then(r => r.text()).then(text => set_blogger_doc(text))
+        console.log(blogger_doc)
     }, [])
 
     // full screen modal state
@@ -23,13 +23,12 @@ function GoogleBlogger(){
     return (
         <>
             <VideoFeature title="Posting song lyrics with OAuth 2.0" 
-                src="/vids/Petmatcher_Demo.mp4"
-                href="https://petmatcher.netlify.app" 
-                github="https://github.com/ryanmohamed/pandagum-client"
-                noVideo
+                src="/vids/Blogger.mp4"
+                noLink 
+                github="https://github.com/ryanmohamed/oauth-2.0-song-blogger"
                 tags={['back-end', 'node.js', 'html 5', 'css', 'oauth 2.0', 'rest api', 'http / https', 'tcp / ip']}
                 filename={'auth.js'}
-                codeSnippet={`${petmatcher_doc}`}
+                codeSnippet={`${blogger_doc}`}
                 language={'js'}
             >
                 <p>This is a project for <span className="emphasize">Internet Web & Technologies</span> that allows a user to <span className="emphasize">search</span> for their favorite song and <span className="emphasize">seamlessly make a post</span> to their Blogger with it&apos;s lyrics. </p>

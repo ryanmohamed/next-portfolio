@@ -194,8 +194,11 @@
     padding: 50px 50px 50px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .Projects > section {
+    max-width: min(800px, 90%);
     margin-bottom: 10vh;
     padding-bottom: 10vh;
     border-bottom: 1px solid white;

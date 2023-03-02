@@ -8,7 +8,7 @@ import Image from 'next/image'
 import CodeSnippet from '../CodeSnippet/CodeSnippet'
 
 export const VideoFeature = (props) => {
-    const { children, title, github, notable, tags, filename, codeSnippet, language, noVideo } = props
+    const { children, title, github, notable, tags, filename, codeSnippet, language, noVideo, noLink } = props
     const [ code, setCode ] = useState("closed")
     const [ style, setStyle ] = useState(null)
     let [ ref, {width, height} ] = useMeasure()
@@ -66,7 +66,7 @@ export const VideoFeature = (props) => {
                 
                 { children }
 
-                { !noVideo && <VideoLink {...props} style={{ margin: '10px 0' }}/> }
+                { !noVideo && <VideoLink noLink={noLink} {...props} style={{ margin: '10px 0' }}/> }
                 
                 <motion.a 
                     whileHover={{ scale: 1.05, backgroundColor: 'rgb(34 197 94)', boxShadow: '2px 3px 4px rgba(0,0,0,0.3)' }}

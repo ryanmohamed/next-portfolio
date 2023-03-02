@@ -4,7 +4,7 @@ import useMeasure from 'react-use-measure'
 import { LazyLoadComponent } from 'react-lazy-load-image-component'
 import Image from "next/image"
 
-export const VideoLink = ({ style, title, src, href,...props }) => {
+export const VideoLink = ({ style, title, src, href, noVideo, noLink, ...props }) => {
     const [over, setOver] = useState(false)
     let [ref, {width, height}] = useMeasure()
 
@@ -21,7 +21,7 @@ export const VideoLink = ({ style, title, src, href,...props }) => {
             </video>
             </LazyLoadComponent>
             <a 
-                style={{ width: `${Math.ceil(width)}px`, height: `${Math.ceil(height)}px` }}
+                style={{ width: `${Math.ceil(width)}px`, height: `${Math.ceil(height)}px`, opacity: noLink ? 0 : undefined }}
                 className={styles.Cover}
                 href={href}
                 target="_blank"
