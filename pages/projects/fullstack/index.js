@@ -22,9 +22,9 @@ function Fullstack(){
                         <img className={styles.bot} src="/svgs/waves-bot.svg"/>
                     </div> */}
                     <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#petmatcher">Petmatcher</a></motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a>Student++</a></motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#googleblogger">Google/Blogger API + OAuth 2.0</a></motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#nextblog">Next.js / Firebase Blog</a></motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#student">Student++</a></motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#googleblogger">Google Blogger API + OAuth 2.0</a></motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#nextblog">Next.js / Firebase Music Blog</a></motion.li>
                 </ul>
 
                 <section className={styles.Breakdown}>

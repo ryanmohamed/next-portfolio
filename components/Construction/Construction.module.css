@@ -1,0 +1,32 @@
+.Construction {
+    padding: var(--dropdownheight);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - calc(var(--bannerheight) + var(--navheight)));
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Construction > img {
+    user-select: none;
+    pointer-events: none;
+    filter: saturate(0.6);
+    margin: 50px;
+}
+.Construction > h1, .Construction > p {
+    font-family: 'Poppins';
+    padding: 0 25px;
+    text-align: center;
+    color: var(--main-bg4);
+}
+.Construction > h1 {
+    font-size: 32px;
+}
+.Construction > p {
+    font-size: 18px;
+}
