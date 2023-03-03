@@ -1,6 +1,7 @@
 import { useState, useEffect, React } from 'react'
 import { VideoFeature } from '../../VideoFeature/VideoFeature'
 import Image from 'next/image'
+import styles from './Student.module.css'
 
 function Student(){
 
@@ -24,9 +25,16 @@ function Student(){
                 codeSnippet={`${student_doc}`}
                 language={'js'}
             >
-                <p>This is a fullstack B2C web app for <span className="emphasize">tracking assignments/tasks</span> and <span className="emphasize">extrapolating their importance/rank</span> in a collective to-do list</p>
-                <p>Project stack includes <span className='emphasize'>React</span>, <span className='emphasize'>Node</span>, <span className='emphasize'>Express</span> and <span className='emphasize'>MySQL</span>. Users are verified through <span className='emphasize'>JWT authentication</span> and gain access to their personalized to-do list. Users can create/delete/update courses & assignments while our servers appropriately adapt to changes. </p>
-
+                <p>This is a fullstack B2C web app for <span className="emphasize">tracking assignments/tasks</span> and <span className="emphasize">extrapolating their importance/rank</span> in a collective to-do list. Project stack includes <span className='emphasize'>React</span>, <span className='emphasize'>Node</span>, <span className='emphasize'>Express</span> and <span className='emphasize'>MySQL</span>.</p>
+                <p>Users are verified through <span className='emphasize'>JWT authentication</span> and gain access to their personalized to-do list. Users can create/delete/update courses & assignments while our servers appropriately adapt to changes. </p>
+                <a 
+                    href="https://aqua-betta-72.tiiny.site" 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className={styles.Documentation}
+                >
+                    View the full project documentation.
+                </a>
             </VideoFeature>
         </>
     )

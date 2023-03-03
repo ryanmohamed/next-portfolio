@@ -1,0 +1,16 @@
+.Documentation {
+    margin: 0 0 20px !important;
+    padding: 0 10px !important;
+    height: fit-content !important;
+    width: fit-content !important;
+    background: none !important;
+    font-family: 'Poppins';
+    color: var(--main-txt2);
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    transition: 200ms;
+}
+.Documentation:hover {
+    scale: 1.1;
+}
