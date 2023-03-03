@@ -1,11 +1,12 @@
 import styles from './fullstack.module.css'
 import SkillLayout from "../../../layout/SkillLayout/SkillLayout"
-import Petmatcher from '../../../components/Projects/Petmatcher/Petmatcher'
 import { motion } from 'framer-motion'
+
 import CollapsibleSection from '../../../components/CollapsibleSection/CollapsibleSection'
+import Petmatcher from '../../../components/Projects/Petmatcher/Petmatcher'
 import GoogleBlogger from '../../../components/Projects/GoogleBlogger/GoogleBlogger'
 import NextBlog from '../../../components/Projects/NextBlog/NextBlog'
-
+import Student from '../../../components/Projects/Student/Student'
 
 function Fullstack(){
 
@@ -28,7 +29,7 @@ function Fullstack(){
 
                 <section className={styles.Breakdown}>
                     <CollapsibleSection heading="Technologies Used:" className={styles.Techs}>
-                        <li> <span>Node.js</span> for building <span>RESTful APIs</span>, <span>secured endpoints</span>, and interacting with deployed <span>databases</span>. </li>
+                        <li> <span>Node.js</span> for building <span>REST APIs</span>, <span>secured endpoints</span>, and interacting with deployed <span>databases</span>. </li>
                         <li> <span>React.js</span> for building <span>dynamic</span>, <span>responsive</span>, client side designs, for intuitive client interaction.</li>
                         <li> <span>Next.js</span> for <span>SSR</span>, <span>SEO</span> and <span>multi-page app</span> support. </li>
                         <li> You need more here like docker utilization. </li>
@@ -70,6 +71,7 @@ function Fullstack(){
 
                 <div className={styles.Projects}>
                     <section id="petmatcher"><Petmatcher /></section>
+                    <section id="student"><Student /></section>
                     <section id="googleblogger"><GoogleBlogger /></section>
                     <section id="nextblog"><NextBlog /></section>
                 </div>

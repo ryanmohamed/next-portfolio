@@ -58,3 +58,18 @@
     max-width: 1000px;
     height: auto;
 }
+
+.FScreenModal > div > div::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+   
+.FScreenModal > div > div::-webkit-scrollbar-track {
+    width: 0;
+    height: 0;
+}
+   
+.FScreenModal > div > div::-webkit-scrollbar-thumb {
+    width: 0;
+    height: 0;
+}

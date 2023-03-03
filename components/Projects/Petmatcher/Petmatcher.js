@@ -18,7 +18,7 @@ function Petmatcher(){
             href="https://petmatcher.netlify.app" 
             github="https://github.com/ryanmohamed/pandagum-client"
             notable={true}
-            tags={['fullstack', 'front-end', 'back-end', 'node.js', 'react.js', 'mysql', 'jwt authentication', 'restful api']}
+            tags={['fullstack', 'front-end', 'back-end', 'node.js', 'react.js', 'mysql', 'jwt authentication', 'restful api', 'socket programming', 'relational data modeling']}
             filename={'auth.js'}
             codeSnippet={`${petmatcher_doc}`}
             language={'js'}

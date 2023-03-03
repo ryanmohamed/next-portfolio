@@ -27,7 +27,7 @@ function GoogleBlogger(){
                 noLink 
                 github="https://github.com/ryanmohamed/oauth-2.0-song-blogger"
                 tags={['back-end', 'node.js', 'html 5', 'css', 'oauth 2.0', 'rest api', 'http / https', 'tcp / ip']}
-                filename={'auth.js'}
+                filename={'index.js'}
                 codeSnippet={`${blogger_doc}`}
                 language={'js'}
             >

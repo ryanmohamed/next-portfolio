@@ -113,8 +113,8 @@
 .Breakdown section ul > li > span { 
     font-family: 'Lato';
     font-size: 20px;
-    color: var(--alternate-txt);
-    font-style: italic;
+    color: var(--alternate-bg4);
+    font-style: bold;
 }
 
 .Breakdown section > img {
@@ -162,7 +162,7 @@
 .Breakdown > .Courses ul > li > i {
     /* background-color: blue; */
     margin-right: 5px;
-    color: var(--alternate-txt);
+    color: var(--alternate-bg4);
     font-size: 20px;
     font-family: 'Lato';
 }
