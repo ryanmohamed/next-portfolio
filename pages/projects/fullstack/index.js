@@ -7,6 +7,7 @@ import Petmatcher from '../../../components/Projects/Petmatcher/Petmatcher'
 import GoogleBlogger from '../../../components/Projects/GoogleBlogger/GoogleBlogger'
 import NextBlog from '../../../components/Projects/NextBlog/NextBlog'
 import Student from '../../../components/Projects/Student/Student'
+import Quizitiv from '../../../components/Projects/Quizitiv/Quizitiv'
 
 function Fullstack(){
 
@@ -21,6 +22,7 @@ function Fullstack(){
                         <img className={styles.top} src="/svgs/waves-top.svg"/>
                         <img className={styles.bot} src="/svgs/waves-bot.svg"/>
                     </div> */}
+                    <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#quizitiv">Quizitiv</a></motion.li>
                     <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#petmatcher">Petmatcher</a></motion.li>
                     <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#student">Student++</a></motion.li>
                     <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#googleblogger">Google Blogger API + OAuth 2.0</a></motion.li>
@@ -70,6 +72,7 @@ function Fullstack(){
                 </section>
 
                 <div className={styles.Projects}>
+                    <section id="quizitiv"><Quizitiv /></section>
                     <section id="petmatcher"><Petmatcher /></section>
                     <section id="student"><Student /></section>
                     <section id="googleblogger"><GoogleBlogger /></section>
