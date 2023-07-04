@@ -28,7 +28,7 @@
     width: 100%;
     padding: 50px 25px 25px;
     border-radius: 0.5rem;
-    background-color: var(--main-bg4);
+    border: 5px solid var(--main-bg2);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -83,10 +83,11 @@
     font-family: 'Poppins';
     font-size: 2rem;
     display: inline;
+    margin-bottom: 1.5rem;
 }
 
 .VideoFeature > p {
-    margin: 25px 0;
+    margin-bottom: 1rem;
     padding: 0 10px;
     color: rgb(231, 207, 207);
     font-family: 'Poppins';
@@ -133,6 +134,7 @@
     font-size: 1.2rem;
     line-height: 1.2rem;
     background-color: var(--main-bg3);
+    border: 1px solid var(--main-bg2);
     margin: 0 10px 10px 0;
     padding: 15px;
     width: fit-content;

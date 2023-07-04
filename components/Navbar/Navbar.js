@@ -14,6 +14,8 @@ export default function Navbar(){
         Ryan Mohamed
         <ul className={styles.Links}>
             <li className={styles.Link}><Link href={{ pathname: '/' }}>Home</Link></li>
+            <li className={styles.Link}><Link href={{ pathname: `resume/RyanMohamed-Resume.pdf` }} target="_blank" referrer="noreferrer">Resume</Link></li>
+            {/* <li className={styles.Link}><Link href={{ pathname: '/blog' }}>Blog</Link></li> */}
             <li className={styles.Link}>
                 <Link href={{ pathname: '/projects' }}>
                     Projects

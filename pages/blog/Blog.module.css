@@ -1,0 +1,4 @@
+.Blog {
+    background-color: red;
+    min-height: calc(100vh - var(--navheight));
+}
