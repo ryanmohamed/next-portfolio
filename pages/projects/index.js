@@ -47,54 +47,94 @@ export default function Projects({ Component, pageProps }) {
         
         <header>
           <h1>Welcome to the Projects and Skills Page 👋</h1>
-          <p>Navigate with high-level <span>skill links</span> to the left for a quick analysis of my past projects.</p>
+          <p>Navigate with high-level <span>skill links</span> for a quick analysis of my past projects.</p>
         </header>
 
         <main>
           <ul>
             <h3><span>Languages</span> I&apos;m proficient with are:</h3>
             <div>
-              <li>Javascript</li>
-              <li>SQL / T-SQL</li>
-              <li>C++</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
               <li>Python</li>
+              <li>C++</li>
               <li>Java</li>
+              <li>Ruby</li>
             </div>
           </ul>
 
           <ul>
             <h3><span>Technologies</span> I&apos;m familar with are:</h3>
             <div>
-              <li>React</li>
-              <li>Node</li>
-              <li>Next</li>
-              <li>SMSS</li>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Next.js</li>
+              <li>Express</li>
+              <li>Sinatra</li>
+              <li>Firebase</li>
+              <li>Google Cloud Platform</li>
+              <li>AWS</li>
               <li>Docker</li>
+              <li>Heroku</li>
+              <li>Netlify</li>
+              <li>MySQL</li>
+              <li>Microsoft SQL Server</li>
+              <li>PostgreSQL</li>
+              <li>Prisma</li>
+              <li>Sequelize</li>
+              <li>JIRA</li>
               <li>Git</li>
-              <li>Github</li>
-              <li>Jira</li>
-              <li>Figma</li>
-              <li>Azure Data Studio</li>
+              <li>GitHub</li>
+              <li>UNIX</li>
+              <li>Linux</li>
+              <li>Mocha</li>
+              <li>Chai</li>
+              <li>Jest</li>
+              <li>Cucumber</li>
+              <li>Cypress</li>
+              <li>Redis</li>
+              <li>Tailwind CSS</li>
+              <li>Bootstrap</li>
+              <li>Material UI</li>
+              <li>Adobe Photoshop</li>
             </div>
           </ul>
           
           <ul>
             <h3><span>Methodologies</span> I strive to implement and abide by:</h3>
             <div>
-              <li>Full-stack Development</li>
-              <li>OAuth 2.0</li>
-              <li>JWT Authetication</li>
-              <li>Scalability</li>
-              <li>SSR</li>
-              <li>UI/UX</li>
-              <li>Agile Method</li>
-              <li>Waterfall</li>
-              <li>CI/CD</li>
-              <li>Responsive Web Design</li>
-              <li>OOP</li>
-              <li>RAII</li>
-              <li>Relational Data Modeling</li>
-              <li>Efficiency through DS</li>
+            <li>Full-stack Development</li>
+            <li>Front-end</li>
+            <li>Back-end</li>
+            <li>System Design</li>
+            <li>MVC</li>
+            <li>RPC</li>
+            <li>RESTful APIs</li>
+            <li>JWT Authentication</li>
+            <li>OAuth</li>
+            <li>SSR</li>
+            <li>JSON</li>
+            <li>Load Balancing</li>
+            <li>RDBMS</li>
+            <li>NoSQL</li>
+            <li>ORM</li>
+            <li>UX/UI</li>
+            <li>Responsive Web Design</li>
+            <li>OOP</li>
+            <li>Version Control</li>
+            <li>Agile</li>
+            <li>Waterfall</li>
+            <li>CI/CD</li>
+            <li>TDD</li>
+            <li>Unit Testing</li>
+            <li>Integration Testing</li>
+            <li>E2E Testing</li>
+            <li>WebSockets</li>
+            <li>TCP</li>
+            <li>HTTP/HTTPS</li>
+            <li>Cloud Computing</li>
+            <li>Data Modeling</li>
             </div>
           </ul>
           

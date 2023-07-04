@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+
+.carousel {
+  --caro-h: 600px;
+  --caro-w: 200px;
+  --rw-h: calc(var(--caro-h) / 4);
+  height: var(--caro-h);
+  width: var(--caro-w);
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: "Oranienbaum", serif;
+  opacity: 1;
+}
+
+.row {
+  list-style-type: none;
+  position: absolute;
+  height: var(--rw-h);
+  display: flex;
+  white-space: nowrap;
+  transition-timing-function: cubic-bezier(0.36, -1.65, 0.14, 1.05);
+  background-color: black;
+}
+
+.row:nth-child(1) {
+  top: calc(var(--rw-h) * 0);
+}
+.row:nth-child(2) {
+  top: calc(var(--rw-h) * 1);
+}
+.row:nth-child(3) {
+  top: calc(var(--rw-h) * 2);
+}
+.row:nth-child(4) {
+  top: calc(var(--rw-h) * 3);
+}
+
+.row li {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.row li span {
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: calc(var(--rw-h) * 0.95);
+  line-height: calc(var(--rw-h) * 0.95);
+}
