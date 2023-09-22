@@ -68,7 +68,7 @@ export const VideoFeature = (props) => {
 
                 { !noVideo && <VideoLink noLink={noLink} {...props} style={{ margin: '10px 0' }}/> }
                 
-                <motion.a 
+                { github && <motion.a 
                     whileHover={{ scale: 1.05, backgroundColor: 'rgb(34 197 94)', boxShadow: '2px 3px 4px rgba(0,0,0,0.3)' }}
                     whileTap={{ scale: 1.2, backgroundColor: 'rgb(34 197 94)' }}
                     mode="wait"
@@ -76,7 +76,7 @@ export const VideoFeature = (props) => {
                     target="_blank"
                 >
                     <Image src="/svgs/github.svg" alt="github button" width={50} height={50}/>
-                </motion.a>
+                </motion.a>}
 
                 {tags && <div className={styles.Tags}>
                     <span>Tags:</span>

@@ -10,7 +10,8 @@ import Student from '../../../components/Projects/Student/Student'
 import Quizitiv from '../../../components/Projects/Quizitiv/Quizitiv'
 import RestaurantRodeo from '../../../components/Projects/RestaurantRodeo/RestaurantRodeo'
 import StripeOpenAI from '../../../components/Projects/StripeOpenAI/StripeOpenAI'
-
+import Fitbyte from '../../../components/Projects/Fitbyte/Fitbyte'
+import AfterSchoolStartup from '../../../components/Projects/AfterSchoolStartup/AfterSchoolStartup'
 
 function Fullstack(){
 
@@ -25,6 +26,8 @@ function Fullstack(){
                         <img className={styles.top} src="/svgs/waves-top.svg"/>
                         <img className={styles.bot} src="/svgs/waves-bot.svg"/>
                     </div> */}
+                    <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#afterschoolstartup">After School Startup</a></motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#fitbyte">Fitbyte</a></motion.li>
                     <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#stripeopenai">Team AI Generation</a></motion.li>
                     <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#rodeo">Restaurant Rodeo</a></motion.li>
                     <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}><a href="#quizitiv">Quizitiv</a></motion.li>
@@ -77,6 +80,8 @@ function Fullstack(){
                 </section>
 
                 <div className={styles.Projects}>
+                    <section id="afterschoolstartup"><AfterSchoolStartup /></section>
+                    <section id="fitbyte"><Fitbyte /></section>
                     <section id="stripeopenai"><StripeOpenAI /></section>
                     <section id="rodeo"><RestaurantRodeo /></section>
                     <section id="quizitiv"><Quizitiv /></section>
